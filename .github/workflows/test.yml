@@ -21,3 +21,7 @@ jobs:
         uses: anchore/scan-action@v3
         with:
           image: "sample:latest"
+      
+      - uses: anchore/sbom-action@v0
+        with:
+          image: sample:latest
