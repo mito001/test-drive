@@ -16,3 +16,8 @@ jobs:
         uses: yuichielectric/dive-action@0.0.4
         with:
           image: "sample:latest"
+      
+      - name: Scan image
+        uses: anchore/scan-action@v3
+        with:
+          image: "localbuild/sample:latest"
