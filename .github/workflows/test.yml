@@ -20,4 +20,4 @@ jobs:
       - name: Scan image
         uses: anchore/scan-action@v3
         with:
-          image: "localbuild/sample:latest"
+          image: "sample:latest"
