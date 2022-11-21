@@ -36,4 +36,5 @@ jobs:
           SNYK_TOKEN: "9a06072e-ba9a-4596-afeb-857a10ebbe6a"
         run: |
           npm install
+          snyk auth $SNYK_TOKEN
           snyk test
