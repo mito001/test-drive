@@ -34,4 +34,6 @@ jobs:
       - name: run Snyk Open Source Test
         env:
           SNYK_TOKEN: "9a06072e-ba9a-4596-afeb-857a10ebbe6a"
-        run: snyk test
+        run: |
+          npm install
+          snyk test
